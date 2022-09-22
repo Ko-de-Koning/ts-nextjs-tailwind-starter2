@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export default function CheckboxGroup() {
-  const [theArray, setTheArray] = useState([] as string[]);
+  const [theArray, setTheArray] = useState([] as string[]); //initialiseer een lege Array ervan uitgaande dat er op page-load nog geen checkbox aangevinkt is - we gebruiken useState om de state bij te houden van een veranderend iets
 
   const updateFieldChanged = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (theArray.includes(event.target.name)) {
