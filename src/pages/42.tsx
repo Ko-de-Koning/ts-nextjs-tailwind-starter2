@@ -12,6 +12,7 @@ import UnderlineLink from '@/components/links/UnderlineLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import NextImage from '@/components/NextImage';
 import Pill from '@/components/Pill';
+import Search from '@/components/Search';
 import Seo from '@/components/Seo';
 import Skeleton from '@/components/Skeleton';
 
@@ -53,6 +54,10 @@ export default function ComponentsPage() {
               <Pill></Pill>
               <Pill></Pill>
               <Pill></Pill>
+            </div>
+
+            <div className='mt-8 flex flex-wrap gap-2'>
+              <Search></Search>
             </div>
 
             <div className='mt-8 flex flex-wrap gap-2'>
