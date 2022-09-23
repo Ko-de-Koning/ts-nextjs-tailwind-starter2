@@ -21,6 +21,7 @@ export default function SearchField() {
         ).map((user) => {
           return (
             <div key={user.id}>
+              {/* the below code creates the (filtered) list */}
               {/* {<ul>
                 <p>{user.first_name}</p>
               }</ul> */}

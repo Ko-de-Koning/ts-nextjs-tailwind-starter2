@@ -4,6 +4,7 @@ import * as React from 'react';
 
 import Button from '@/components/buttons/Button';
 import CheckboxGroup from '@/components/checkboxGroup/CheckboxGroup';
+import Header from '@/components/layout/Header';
 import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
@@ -33,7 +34,7 @@ export default function ComponentsPage() {
         templateTitle='Profielpagina'
         description='Aanmaken Find N Fund Profiel'
       />
-
+      <Header></Header>
       <main>
         <section
           className={clsx(mode === 'dark' ? 'bg-dark' : 'bg-gray-50', color)}
@@ -44,11 +45,12 @@ export default function ComponentsPage() {
               mode === 'dark' ? 'text-white' : 'text-black'
             )}
           >
-            <h1>Built-in Components</h1>
+            <div className='layout flex flex-col items-center justify-center text-center'>
+              <h1>Aanmaken FindNFund profiel</h1>
+            </div>
 
-            <ArrowLink direction='left' className='mt-2' href='/'>
-              Back to Home
-            </ArrowLink>
+            <h2>Informatie over Livingstone</h2>
+            <h2>Profiel specifieke informatie</h2>
 
             <div className='mt-8 flex flex-wrap gap-2'>
               <Pill></Pill>
@@ -63,6 +65,12 @@ export default function ComponentsPage() {
             <div className='mt-8 flex flex-wrap gap-2'>
               <CheckboxGroup></CheckboxGroup>
             </div>
+
+            <></>
+
+            <ArrowLink direction='left' className='mt-2' href='/'>
+              Back to Home
+            </ArrowLink>
 
             <div className='mt-8 flex flex-wrap gap-2'>
               <Button
