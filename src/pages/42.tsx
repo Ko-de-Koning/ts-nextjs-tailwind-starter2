@@ -52,7 +52,7 @@ export default function ComponentsPage() {
             <h2>Informatie over Livingstone</h2>
             <h2>Profiel specifieke informatie</h2>
 
-            <div class='layout min-h-screen rounded bg-[#feffff] bg-contain p-8 py-5 text-black outline-offset-4'>
+            <div className='layout min-h-screen rounded bg-[#feffff] bg-contain p-8 py-5 text-black outline-offset-4'>
               <h6>Relevante thema&apos;s</h6>
               <div className='mt-8 flex flex-wrap gap-2 rounded bg-[#f4f3ed] p-8'>
                 <div className='mt-8 flex flex-wrap gap-2'>
