@@ -37,7 +37,7 @@ export default function ComponentsPage() {
       <Header></Header>
       <main>
         <section
-          className={clsx(mode === 'dark' ? 'bg-dark' : 'bg-gray-50', color)}
+          className={clsx(mode === 'dark' ? 'bg-dark' : 'bg-[#fafbfc]', color)}
         >
           <div
             className={clsx(
@@ -52,21 +52,26 @@ export default function ComponentsPage() {
             <h2>Informatie over Livingstone</h2>
             <h2>Profiel specifieke informatie</h2>
 
-            <div className='mt-8 flex flex-wrap gap-2'>
-              <Pill></Pill>
-              <Pill></Pill>
-              <Pill></Pill>
-            </div>
+            <div class='layout min-h-screen rounded bg-[#feffff] bg-contain p-8 py-5 text-black outline-offset-4'>
+              <h6>Relevante thema&apos;s</h6>
+              <div className='mt-8 flex flex-wrap gap-2 rounded bg-[#f4f3ed] p-8'>
+                <div className='mt-8 flex flex-wrap gap-2'>
+                  <Pill></Pill>
+                  <Pill></Pill>
+                  <Pill></Pill>
+                </div>
 
-            <div className='mt-8 flex flex-wrap gap-2'>
-              <Search></Search>
-            </div>
+                <div className='mt-8 flex flex-wrap gap-2'>
+                  <Search></Search>
+                </div>
+                <></>
+                <div className='mt-8 flex flex-wrap gap-2'>
+                  <CheckboxGroup></CheckboxGroup>
+                </div>
 
-            <div className='mt-8 flex flex-wrap gap-2'>
-              <CheckboxGroup></CheckboxGroup>
+                <></>
+              </div>
             </div>
-
-            <></>
 
             <ArrowLink direction='left' className='mt-2' href='/'>
               Back to Home

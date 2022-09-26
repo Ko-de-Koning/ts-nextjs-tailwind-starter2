@@ -10,7 +10,7 @@ const links = [
 
 export default function Header() {
   return (
-    <header className='sticky top-0 z-50 bg-gray-200'>
+    <header className='sticky top-0 z-50 bg-[#f4f3ed]'>
       <div className='layout flex h-14 items-center justify-between'>
         <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
           <NextImage

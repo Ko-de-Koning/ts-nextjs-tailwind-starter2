@@ -8,7 +8,7 @@ export default function SearchField() {
   };
 
   return (
-    <div className='Search'>
+    <div className='Search rounded'>
       <input
         type='text'
         placeholder='Zoek doelgroep'

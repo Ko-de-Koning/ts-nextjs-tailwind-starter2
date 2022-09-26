@@ -15,22 +15,52 @@ export default function CheckboxGroup() {
   return (
     <div>
       <label>
-        <input
-          name='mannen'
-          type='checkbox'
-          value='event.target.name'
-          onChange={updateFieldChanged}
-        />{' '}
-        Mannen
+        <ul>
+          <input
+            className='... rounded border-2 border-orange-600'
+            name='Geen specifieke doelgroep'
+            type='checkbox'
+            value='event.target.name'
+            onChange={updateFieldChanged}
+          />{' '}
+          Geen specifieke doelgroep
+        </ul>
       </label>
       <label>
-        <input
-          name='vrouwen'
-          type='checkbox'
-          value='event.target.name'
-          onChange={updateFieldChanged}
-        />{' '}
-        Vrouwen
+        <ul>
+          <input
+            className='... rounded border-2 border-orange-600'
+            name='mannen'
+            type='checkbox'
+            value='event.target.name'
+            onChange={updateFieldChanged}
+          />{' '}
+          Mannen
+        </ul>
+      </label>
+      <label>
+        <ul>
+          <input
+            className='... rounded border-2 border-orange-600'
+            name='vrouwen'
+            type='checkbox'
+            value='event.target.name'
+            onChange={updateFieldChanged}
+          />{' '}
+          Vrouwen
+        </ul>
+      </label>
+      <label>
+        <ul>
+          <input
+            className='... rounded border-2 border-orange-600'
+            name='<18'
+            type='checkbox'
+            value='event.target.name'
+            onChange={updateFieldChanged}
+          />{' '}
+          &#60; 18
+        </ul>
       </label>
     </div>
   );
