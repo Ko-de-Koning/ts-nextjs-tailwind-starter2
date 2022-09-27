@@ -8,12 +8,13 @@ export default function SearchField() {
   };
 
   return (
-    <div className='Search rounded'>
+    <div>
       <input
         type='text'
         placeholder='Zoek doelgroep'
         value={searchTerm}
         onChange={handleChange}
+        className='max-w-screen-lg rounded'
       />
       <ul>
         {JSONDATA.filter((user) =>
@@ -21,10 +22,11 @@ export default function SearchField() {
         ).map((user) => {
           return (
             <div key={user.id}>
-              {/* the below code creates the (filtered) list */}
-              {/* {<ul>
-                <p>{user.first_name}</p>
-              }</ul> */}
+              <ul className='hidden'>
+                <p>
+                  <span>{user.first_name}</span> <span>{user.last_name}</span>
+                </p>
+              </ul>
             </div>
           );
         })}

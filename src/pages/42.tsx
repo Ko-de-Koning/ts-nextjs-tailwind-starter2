@@ -42,26 +42,86 @@ export default function ComponentsPage() {
           <div
             className={clsx(
               'layout min-h-screen py-20',
-              mode === 'dark' ? 'text-white' : 'text-black'
+              mode === 'dark' ? 'text-white' : 'text-slate-800'
             )}
           >
-            <div className='layout flex flex-col items-center justify-center text-center'>
+            <div className='layout mb-10 flex flex-col items-center justify-center text-center'>
               <h1>Aanmaken FindNFund profiel</h1>
             </div>
 
-            <h2>Informatie over Livingstone</h2>
-            <h2>Profiel specifieke informatie</h2>
+            <div className='mb-5 flex flex-nowrap items-center'>
+              <span>
+                <NextImage
+                  useSkeleton
+                  className='md:w-15 w-12'
+                  src='/images/cirkel_met_vinkje.png'
+                  width='180'
+                  height='180'
+                  alt='Icon'
+                />
+              </span>
+              <span>
+                <h3>Informatie over Livingstone</h3>
+              </span>
+            </div>
+            <div className='mb-5 flex flex-nowrap items-center'>
+              <span>
+                <NextImage
+                  useSkeleton
+                  className='md:w-15 w-12'
+                  src='/images/cirkel_met_2.png'
+                  width='180'
+                  height='180'
+                  alt='Icon'
+                />
+              </span>
+              <span>
+                <h3>Profiel specifieke informatie</h3>
+              </span>
+            </div>
 
-            <div className='layout min-h-screen rounded bg-[#feffff] bg-contain p-8 py-5 text-black outline-offset-4'>
-              <h6>Relevante thema&apos;s</h6>
-              <div className='mt-8 flex flex-wrap gap-2 rounded bg-[#f4f3ed] p-8'>
-                <div className='mt-8 flex flex-wrap gap-2'>
+            <div className='layout ml-12 min-h-screen rounded bg-[#feffff] p-8 py-5 text-black outline-offset-4'>
+              <div className='flex flex-nowrap items-center'>
+                <span className='ml-4 py-0'>
+                  <h6>Relevante thema&apos;s </h6>
+                </span>
+                <span className='pl-1'>
+                  <NextImage
+                    useSkeleton
+                    className='w-4 md:w-5'
+                    src='/images/64px-Infobox_info_icon.svg.png'
+                    width='180'
+                    height='180'
+                    alt='Icon'
+                  />
+                </span>
+              </div>
+
+              <div className='mt-1 mb-8 ml-4 flex-col gap-2 rounded bg-[#f4f3ed] p-8 pt-1 text-slate-800'>
+                <div className='mt-8 flex flex-nowrap gap-2'>
                   <Pill></Pill>
                   <Pill></Pill>
                   <Pill></Pill>
                 </div>
 
+                <div className='mt-8 gap-2'>
+                  <Search></Search>
+                </div>
+                <></>
                 <div className='mt-8 flex flex-wrap gap-2'>
+                  <CheckboxGroup></CheckboxGroup>
+                </div>
+
+                <></>
+              </div>
+              <div className='mb-8 ml-4 flex-col gap-2 rounded bg-[#f4f3ed] p-8 pt-1 text-slate-800'>
+                <div className='mt-8 flex flex-nowrap gap-2'>
+                  <Pill></Pill>
+                  <Pill></Pill>
+                  <Pill></Pill>
+                </div>
+
+                <div className='mt-8 gap-2'>
                   <Search></Search>
                 </div>
                 <></>

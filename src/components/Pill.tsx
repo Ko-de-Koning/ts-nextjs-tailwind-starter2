@@ -7,7 +7,7 @@ export default function Pill() {
     setVisible(false);
   };
   return visible ? (
-    <div className='inline-flex rounded-full bg-groen py-2 px-4 text-white hover:bg-teal-200'>
+    <div className='max-w-fit flex-wrap rounded-full bg-groen py-2 px-4 text-white hover:bg-emerald-800'>
       <span>Lorem Ipsum</span>
       <button onClick={removeElement}>
         <span>&times;</span>
