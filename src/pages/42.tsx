@@ -46,7 +46,10 @@ export default function ComponentsPage() {
             )}
           >
             <div className='layout mb-10 flex flex-col items-center justify-center text-center'>
-              <h1>Aanmaken FindNFund profiel</h1>
+              <h1>
+                Aanmaken Find<span className='text-[#e46235]'>N</span>Fund
+                profiel
+              </h1>
             </div>
 
             <div className='mb-5 flex flex-nowrap items-center'>
@@ -61,7 +64,10 @@ export default function ComponentsPage() {
                 />
               </span>
               <span>
-                <h3>Informatie over Livingstone</h3>
+                <h3>
+                  Informatie over{' '}
+                  <span className='text-[#e46235]'>Livingstone</span>
+                </h3>
               </span>
             </div>
             <div className='mb-5 flex flex-nowrap items-center'>
