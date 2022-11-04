@@ -27,7 +27,9 @@ export default function HomePage() {
         <section className='bg-white'>
           <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
             <Vercel className='text-5xl' />
-            <h1 className='mt-4'>MilieuVacaturebank.nl komt er aan</h1>
+            <h1 className='mt-4'>
+              :::: MilieuVacaturebank.nl ::: dan is het goed ::::
+            </h1>
 
             <p className='mt-2 text-sm text-gray-800'>
               :::: Dé Milieu Vacature Site!! :::: Totaal Aanbod aan Milieu Banen
@@ -35,8 +37,11 @@ export default function HomePage() {
             </p>
 
             <footer className='absolute bottom-2 text-gray-700'>
-              © {new Date().getFullYear()} By{' '}
-              <UnderlineLink href='/'>MilieuVacaturebank</UnderlineLink>
+              © {new Date().getFullYear()}{' '}
+              <UnderlineLink href='/'>
+                ::::: MilieuVacaturebank.nl :::: work for good not just for
+                profit :::::
+              </UnderlineLink>
             </footer>
           </div>
         </section>

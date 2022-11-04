@@ -128,7 +128,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <UnstyledLink href='/'>Internal Links</UnstyledLink>
-                  <UnstyledLink href='https://theodorusclarence.com'>
+                  <UnstyledLink href='https://milieuvacaturebank.nl'>
                     Outside Links
                   </UnstyledLink>
                 </div>
@@ -141,7 +141,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <PrimaryLink href='/'>Internal Links</PrimaryLink>
-                  <PrimaryLink href='https://theodorusclarence.com'>
+                  <PrimaryLink href='https://milieuvacaturebank.nl'>
                     Outside Links
                   </PrimaryLink>
                 </div>
@@ -195,33 +195,33 @@ export default function ComponentsPage() {
                 <div className='flex flex-wrap gap-2'>
                   <ButtonLink
                     variant='primary'
-                    href='https://theodorusclarence.com'
+                    href='https://milieuvacaturebank.nl'
                   >
                     Primary Variant
                   </ButtonLink>
                   <ButtonLink
                     variant='outline'
                     isDarkBg={mode === 'dark'}
-                    href='https://theodorusclarence.com'
+                    href='https://milieuvacaturebank.nl'
                   >
                     Outline Variant
                   </ButtonLink>
                   <ButtonLink
                     variant='ghost'
                     isDarkBg={mode === 'dark'}
-                    href='https://theodorusclarence.com'
+                    href='https://milieuvacaturebank.nl'
                   >
                     Ghost Variant
                   </ButtonLink>
                   <ButtonLink
                     variant='dark'
-                    href='https://theodorusclarence.com'
+                    href='https://milieuvacaturebank.nl'
                   >
                     Dark Variant
                   </ButtonLink>
                   <ButtonLink
                     variant='light'
-                    href='https://theodorusclarence.com'
+                    href='https://milieuvacaturebank.nl'
                   >
                     Light Variant
                   </ButtonLink>
