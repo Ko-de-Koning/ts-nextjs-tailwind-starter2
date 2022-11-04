@@ -66,9 +66,7 @@ export default function HomePage() {
 
             <footer className='absolute bottom-2 text-gray-700'>
               © {new Date().getFullYear()} By{' '}
-              <UnderlineLink href='www.milieuvacaturebank.nl'>
-                MilieuVacaturebank
-              </UnderlineLink>
+              <UnderlineLink href='/'>MilieuVacaturebank</UnderlineLink>
             </footer>
           </div>
         </section>

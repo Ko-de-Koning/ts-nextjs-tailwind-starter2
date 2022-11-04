@@ -154,7 +154,7 @@ export default function ComponentsPage() {
                 </p>
                 <div className='space-x-2'>
                   <UnderlineLink href='/'>Internal Links</UnderlineLink>
-                  <UnderlineLink href='https://theodorusclarence.com'>
+                  <UnderlineLink href='https://www.milieuvacaturebank.nl'>
                     Outside Links
                   </UnderlineLink>
                 </div>
