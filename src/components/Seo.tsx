@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 // !STARTERCONF Change these default meta
 const defaultMeta = {
   title:
-    ':::: Dé Milieu Vacature Site!! :::: Totaal Aanbod aan Milieu Banen :::: Snel en Voordelig Personeel Werven ::::',
+    'Dé Milieu Vacaturebank       voor werk :: banen :: vacatures in de Milieu Sector | MilieuVacaturebank.nl | natuurbeheer | dierenbescherming | milieutechniek',
   siteName:
     ':::: Dé Milieu Vacature Site!! :::: Totaal Aanbod aan Milieu Banen :::: Snel en Voordelig Personeel Werven ::::',
   description:
