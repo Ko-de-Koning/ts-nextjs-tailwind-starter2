@@ -9,7 +9,7 @@ const defaultMeta = {
     ':::: Dé Milieu Vacature Site!! :::: Totaal Aanbod aan Milieu Banen :::: Snel en Voordelig Personeel Werven ::::',
   description:
     ':::: Dé Milieu Vacature Site!! :::: Totaal Aanbod aan Milieu Banen :::: Snel en Voordelig Personeel Werven ::::',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
+  /** Without additional '/' on the end, e.g. https://www.milieuvacaturebank.nl */
   url: 'https://www.milieuvacaturebank.nl',
   type: 'website',
   robots: 'follow, index',
@@ -37,7 +37,7 @@ export default function Seo(props: SeoProps) {
 
   // Use siteName if there is templateTitle
   // but show full title if there is none
-  // !STARTERCONF Follow config for opengraph, by deploying one on https://github.com/theodorusclarence/og
+  // !STARTERCONF Follow config for opengraph, by deploying one on https://github.com/ko-de-koning/og
   // ? Uncomment code below if you want to use default open graph
   // meta['image'] = openGraph({
   //   description: meta.description,
@@ -53,11 +53,11 @@ export default function Seo(props: SeoProps) {
       <meta property='og:url' content={`${meta.url}${router.asPath}`} />
       <link rel='canonical' href={`${meta.url}${router.asPath}`} />
       {/* Open Graph */}
-      <meta property='og:type' content={meta.type} />
+      {/* <meta property='og:type' content={meta.type} />
       <meta property='og:site_name' content={meta.siteName} />
       <meta property='og:description' content={meta.description} />
       <meta property='og:title' content={meta.title} />
-      <meta name='image' property='og:image' content={meta.image} />
+      <meta name='image' property='og:image' content={meta.image} /> */}
       {/* Twitter */}
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@th_clarence' />
@@ -75,7 +75,7 @@ export default function Seo(props: SeoProps) {
           <meta
             name='author'
             property='article:author'
-            content='Theodorus Clarence'
+            content='MilieuVacaturebank'
           />
         </>
       )}
