@@ -8,8 +8,7 @@ export default function Footer() {
       <footer className='absolute bottom-2 text-gray-700'>
         © {new Date().getFullYear()}{' '}
         <UnderlineLink href='/'>
-          ::::: MilieuVacaturebank.nl :::: work for good not just for profit
-          :::::
+          ::::: MilieuVacaturebank.nl :::: work for good not just profit :::::
         </UnderlineLink>
       </footer>
     </div>

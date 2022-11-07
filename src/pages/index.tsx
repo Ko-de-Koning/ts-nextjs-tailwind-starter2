@@ -1,7 +1,5 @@
 import * as React from 'react';
 
-import Footer from '@/components/layout/Footer';
-import Header from '@/components/layout/Header';
 import Layout from '@/components/layout/Layout';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
@@ -24,28 +22,22 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
-      <main>
-        <section className='bg-white'>
-          <Header />
-          <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
-            <h1 className='mt-4'>
-              :::: MilieuVacaturebank.nl ::: dan is het goed ::::
-            </h1>
-            <p className='mt-2 text-sm text-gray-800'>
-              :::: Dé Milieu Vacature Site!! :::: Totaal Aanbod aan Milieu Banen
-              :::: Snel en Voordelig Personeel Werven ::::{' '}
-            </p>
-            <>
-              <div className='grid h-screen place-items-center space-x-2'>
-                <UnderlineLink href='https://www.twitter.com/milieuvolutie'>
-                  De MilieuVacaturebank gaat verder
-                </UnderlineLink>
-              </div>
-            </>
-            <Footer />
+      <section className='bg-white'>
+        <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
+          <h1 className='mt-4'>
+            :::: MilieuVacaturebank.nl ::: dan is het goed ::::
+          </h1>
+          <p className='mt-2 text-sm text-gray-800'>
+            :::: Dé Milieu Vacature Site!! :::: Totaal Aanbod aan Milieu Banen
+            :::: Snel en Voordelig Personeel Werven ::::{' '}
+          </p>
+          <div className='grid h-screen place-items-center space-x-2'>
+            <UnderlineLink href='https://www.twitter.com/milieuvolutie'>
+              De MilieuVacaturebank gaat verder
+            </UnderlineLink>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
     </Layout>
   );
 }
