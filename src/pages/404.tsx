@@ -7,7 +7,7 @@ import Seo from '@/components/Seo';
 export default function NotFoundPage() {
   return (
     <main>
-      <Seo templateTitle='Not Found' />
+      <Seo templateTitle='This Page is Extinct' />
 
       <section className='bg-white'>
         <div className='layout flex min-h-screen flex-col items-center justify-center text-center text-black'>

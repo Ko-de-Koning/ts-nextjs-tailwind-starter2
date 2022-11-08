@@ -17,9 +17,11 @@ import Seo from '@/components/Seo';
 
 export default function HomePage() {
   return (
-    <>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+    <main>
+      <Seo
+        templateTitle='Home of De MilieuVacaturebank'
+        description=':::: Dé Milieu Vacature Site!! :::: Totaal Aanbod aan Milieu Banen :::: Snel en Voordelig Personeel Werven ::::'
+      />
       <section className='bg-white'>
         <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
           <h1 className='mt-4'>
@@ -36,6 +38,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </>
+    </main>
   );
 }

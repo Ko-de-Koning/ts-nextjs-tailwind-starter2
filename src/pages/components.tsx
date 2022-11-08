@@ -24,7 +24,6 @@ export default function ComponentsPage() {
   const textColor = mode === 'dark' ? 'text-gray-300' : 'text-gray-600';
 
   return (
-    // <Layout>
     <main>
       <Seo
         templateTitle='Components'
@@ -36,7 +35,7 @@ export default function ComponentsPage() {
       >
         <div
           className={clsx(
-            'layout min-h-screen py-20',
+            'layout py-20',
             mode === 'dark' ? 'text-white' : 'text-black'
           )}
         >
@@ -308,7 +307,6 @@ export default function ComponentsPage() {
         </div>
       </section>
     </main>
-    // </Layout>
   );
 }
 
