@@ -4,7 +4,6 @@ import * as React from 'react';
 
 import Button from '@/components/buttons/Button';
 import CheckboxGroup from '@/components/checkboxGroup/CheckboxGroup';
-import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
 import PrimaryLink from '@/components/links/PrimaryLink';
@@ -28,7 +27,8 @@ export default function ComponentsPage() {
   const textColor = mode === 'dark' ? 'text-gray-300' : 'text-gray-600';
 
   return (
-    <Layout>
+    // <Layout>
+    <main>
       <Seo
         templateTitle='Profielpagina'
         description='Aanmaken Find N Fund Profiel'
@@ -401,7 +401,8 @@ export default function ComponentsPage() {
           </ol>
         </div>
       </section>
-    </Layout>
+    </main>
+    // </Layout>
   );
 }
 
