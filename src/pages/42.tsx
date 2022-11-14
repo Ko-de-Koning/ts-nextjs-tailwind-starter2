@@ -27,7 +27,6 @@ export default function ComponentsPage() {
   const textColor = mode === 'dark' ? 'text-gray-300' : 'text-gray-600';
 
   return (
-    // <Layout>
     <main>
       <Seo
         templateTitle='Profielpagina'
@@ -402,7 +401,6 @@ export default function ComponentsPage() {
         </div>
       </section>
     </main>
-    // </Layout>
   );
 }
 
