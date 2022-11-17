@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import ArrowLink from '@/components/links/ArrowLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
 
@@ -37,6 +38,11 @@ export default function HomePage() {
             </UnderlineLink>
           </div>
         </div>
+      </section>
+      <section className='bg-white'>
+        <ArrowLink direction='left' className='mt-2' href='/add-vacancy'>
+          Voeg een vacature toe
+        </ArrowLink>
       </section>
     </main>
   );

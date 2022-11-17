@@ -40,9 +40,6 @@ export default function ComponentsPage() {
           )}
         >
           <h1>Built-in Components</h1>
-          <ArrowLink direction='left' className='mt-2' href='/'>
-            Back to Home
-          </ArrowLink>
 
           <div className='mt-8 flex flex-wrap gap-2'>
             <Button
