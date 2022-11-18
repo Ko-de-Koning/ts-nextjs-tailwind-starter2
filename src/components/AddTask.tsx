@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 type AddTaskProps = {
-  onAdd: VacancyFields;
+  onAdd: ({ text, day }: VacancyFields) => void;
 };
 
 type VacancyFields = {
