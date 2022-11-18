@@ -3,19 +3,16 @@
     {
       "text": "Go to the Store",
       "day": "Monday",
-      "reminder": "false",
       "id": 4
     },
     {
       "text": "Workout",
       "day": "Tuesday",
-      "reminder": true,
       "id": 5
     },
     {
       "text": "Job Title",
       "day": "Today",
-      "reminder": "false",
       "id": 6
     }
   ]

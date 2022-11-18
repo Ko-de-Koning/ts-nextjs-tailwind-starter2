@@ -1,15 +1,9 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import AddTask from './../components/AddTask';
+import type { VacancyObject } from './../components/Task';
 
-export type VacancyObject = {
-  text: string;
-  day: string;
-  reminder: string;
-  id: number;
-};
-
-const AddVacancy = async () => {
+const AddVacancy = () => {
   const [tasks, setTasks] = useState([] as VacancyObject[]);
 
   // Fetch tasks

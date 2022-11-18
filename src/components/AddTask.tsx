@@ -1,11 +1,19 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
-const AddTask = ({ onAdd }) => {
+type AddTaskProps = {
+  onAdd: VacancyFields;
+};
+
+type VacancyFields = {
+  text: string;
+  day: string;
+};
+
+const AddTask = ({ onAdd }: AddTaskProps) => {
   const [text, setText] = useState('');
   const [day, setDay] = useState('');
-  const [reminder, setReminder] = useState('false');
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!text) {
@@ -13,11 +21,10 @@ const AddTask = ({ onAdd }) => {
       return;
     }
 
-    onAdd({ text, day, reminder });
+    onAdd({ text, day });
 
     setText('');
     setDay('');
-    setReminder(false);
   };
 
   return (
@@ -38,15 +45,6 @@ const AddTask = ({ onAdd }) => {
           placeholder='Add Day & Time'
           value={day}
           onChange={(e) => setDay(e.target.value)}
-        />
-      </div>
-      <div className='form-control form-control-check'>
-        <label>Set Reminder</label>
-        <input
-          type='checkbox'
-          checked={reminder}
-          value={reminder}
-          onChange={(e) => setReminder(e.currentTarget.checked)}
         />
       </div>
 
