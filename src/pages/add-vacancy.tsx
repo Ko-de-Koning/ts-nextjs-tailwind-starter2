@@ -1,17 +1,16 @@
 import { useEffect, useState } from 'react';
 
 import AddTask from './../components/AddTask';
-import Tasks from './../components/Tasks';
 
-interface Task {
+export type VacancyObject = {
   text: string;
   day: string;
   reminder: string;
   id: number;
-}
+};
 
-const AddVacancy = () => {
-  const [tasks, setTasks] = useState([] as Task[]);
+const AddVacancy = async () => {
+  const [tasks, setTasks] = useState([] as VacancyObject[]);
 
   useEffect(() => {
     const getTasks = async () => {
@@ -30,16 +29,8 @@ const AddVacancy = () => {
     return data;
   };
 
-  // Fetch task
-  const fetchTask = async (id: number) => {
-    const res = await fetch(`http://localhost:5000/tasks/${id}`);
-    const data = await res.json();
-
-    return data;
-  };
-
   // Add Task
-  const addTask = async (task: Task) => {
+  const addTask = async (task: VacancyObject) => {
     const res = await fetch('http://localhost:5000/tasks', {
       method: 'POST',
       headers: {
@@ -58,48 +49,9 @@ const AddVacancy = () => {
     */
   };
 
-  // Delete Task
-  const deleteTask = async (id: number) => {
-    await fetch(`http://localhost:5000/tasks/${id}`, {
-      method: 'DELETE',
-    });
-
-    setTasks(tasks.filter((task) => task.id !== id));
-  };
-
-  // Togle Reminder
-  const toggleReminder = async (id: number) => {
-    const taskToToggle = await fetchTask(id);
-    const updTask = {
-      ...taskToToggle,
-      reminder: !taskToToggle.reminder,
-    };
-
-    const res = await fetch(`http://localhost:5000/tasks/${id}`, {
-      method: 'PUT',
-      headers: {
-        'Content-type': 'application/json',
-      },
-      body: JSON.stringify(updTask),
-    });
-
-    const data = await res.json();
-
-    setTasks(
-      tasks.map((task) =>
-        task.id === id ? { ...task, reminder: data.reminder } : task
-      )
-    );
-  };
-
   return (
     <div className='container'>
       <AddTask onAdd={addTask} />
-      {tasks.length > 0 ? (
-        <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
-      ) : (
-        'No Tasks To Show'
-      )}
     </div>
   );
 };
