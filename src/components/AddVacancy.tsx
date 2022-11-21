@@ -10,7 +10,7 @@ const AddVacancy = () => {
     e.preventDefault();
 
     if (!text) {
-      alert('Please add a vacancy');
+      alert('Plaatst u alstublieft een vacature');
       return;
     }
 
