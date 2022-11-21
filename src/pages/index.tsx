@@ -4,6 +4,8 @@ import ArrowLink from '@/components/links/ArrowLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
 
+import Tasks from '../components/VacancyList';
+
 /**
  * SVGR Support
  * Caveat: No React Props Type.
@@ -43,6 +45,9 @@ export default function HomePage() {
         <ArrowLink direction='left' className='mt-2' href='/add-vacancy'>
           Voeg een vacature toe
         </ArrowLink>
+      </section>
+      <section>
+        <Tasks />
       </section>
     </main>
   );
