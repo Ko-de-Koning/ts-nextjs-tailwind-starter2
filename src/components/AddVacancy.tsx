@@ -1,15 +1,8 @@
 import React, { useState } from 'react';
 
-type AddTaskProps = {
-  onAdd: ({ text, day }: VacancyFields) => void;
-};
+import { VacancyObject } from '@/components/Vacancy';
 
-type VacancyFields = {
-  text: string;
-  day: string;
-};
-
-const AddTask = ({ onAdd }: AddTaskProps) => {
+const AddVacancy = () => {
   const [text, setText] = useState('');
   const [day, setDay] = useState('');
 
@@ -17,23 +10,36 @@ const AddTask = ({ onAdd }: AddTaskProps) => {
     e.preventDefault();
 
     if (!text) {
-      alert('Please add a task');
+      alert('Please add a vacancy');
       return;
     }
 
-    onAdd({ text, day });
+    addVacancy({ text, day });
 
     setText('');
     setDay('');
   };
 
+  const addVacancy = async (vacancyObject: VacancyObject) => {
+    const res = await fetch('http://localhost:5000/vacancyList', {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(vacancyObject),
+    });
+
+    const data = await res.json();
+    return data;
+  };
+
   return (
     <form className='add-form' onSubmit={onSubmit}>
       <div className='form-control'>
-        <label>Task</label>
+        <label>Vacature</label>
         <input
           type='text'
-          placeholder='Add Task'
+          placeholder='Plaats vacature'
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
@@ -42,15 +48,15 @@ const AddTask = ({ onAdd }: AddTaskProps) => {
         <label>Day & Time</label>
         <input
           type='text'
-          placeholder='Add Day & Time'
+          placeholder='Voeg datum en tijd toe'
           value={day}
           onChange={(e) => setDay(e.target.value)}
         />
       </div>
 
-      <input type='submit' value='Save Task' className='btn btn-block' />
+      <input type='submit' value='Plaats vacature' className='btn btn-block' />
     </form>
   );
 };
 
-export default AddTask;
+export default AddVacancy;

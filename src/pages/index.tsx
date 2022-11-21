@@ -4,7 +4,7 @@ import ArrowLink from '@/components/links/ArrowLink';
 import UnderlineLink from '@/components/links/UnderlineLink';
 import Seo from '@/components/Seo';
 
-import Tasks from './../components/Tasks';
+import Tasks from '../components/VacancyList';
 
 /**
  * SVGR Support

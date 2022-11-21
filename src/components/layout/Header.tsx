@@ -2,10 +2,7 @@ import * as React from 'react';
 
 import UnstyledLink from '@/components/links/UnstyledLink';
 
-const links = [
-  { href: '/', label: 'NL/' },
-  { href: '/', label: 'ENG' },
-];
+const links = [{ href: '/add-vacancy', label: 'Werkgever' }];
 
 export default function Header() {
   return (
