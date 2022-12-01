@@ -45,10 +45,10 @@ const AddVacancy = () => {
         />
       </div>
       <div className='form-control'>
-        <label>Day & Time</label>
+        <label>Company Name</label>
         <input
           type='text'
-          placeholder='Voeg datum en tijd toe'
+          placeholder='Bedrijfsnaam'
           value={day}
           onChange={(e) => setDay(e.target.value)}
         />
