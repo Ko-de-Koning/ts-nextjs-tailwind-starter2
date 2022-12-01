@@ -29,11 +29,11 @@ const VacancyList = () => {
   }
 
   return (
-    <>
+    <div className='vacancylist my-8'>
       {vacancyList.map((vacancy, index) => (
         <Vacancy key={vacancy.id ? vacancy.id : index} vacancy={vacancy} />
       ))}
-    </>
+    </div>
   );
 };
 
