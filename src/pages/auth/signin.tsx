@@ -1,3 +1,4 @@
+import { signIn } from 'next-auth/react';
 import React, { FormEventHandler, useState } from 'react';
 
 export default function Signin() {
@@ -6,11 +7,11 @@ export default function Signin() {
     // validate your userinfo
     e.preventDefault();
 
-    // const res = await signIn('credentials', {
-    //   email: userInfo.email,
-    //   password: userInfo.password,
-    //   redirect: false,
-    // });
+    await signIn('credentials', {
+      email: userInfo.email,
+      password: userInfo.password,
+      redirect: false,
+    });
   };
   return (
     <div className='sign-in-form'>
