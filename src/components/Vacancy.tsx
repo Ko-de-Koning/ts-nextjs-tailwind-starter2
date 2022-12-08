@@ -23,15 +23,15 @@ const Vacancy = ({ vacancy }: Vacancy) => {
           width='1024px'
           height='745px'
           alt='Bedrijfslogo'
-          className='h-full w-full'
+          className='h-full sm:w-auto md:w-1/5'
           imgClassName='rounded-t-lg md:rounded-l-lg md:rounded-tr-none'
         />
-        <div className='p-3 text-sm text-gray-500'>
-          <div className='font-bold'>
+        <div className='flex flex-col p-3 text-sm text-gray-500 md:w-4/5 md:flex-row md:justify-between'>
+          <div className='p-2 font-bold'>
             <>{vacancy.text}</>
           </div>
-          <p>{vacancy.day}</p>
-          <div className='center pt-2'>
+          <div>{vacancy.day}</div>
+          <div className='pt-2'>
             <Button variant='light'>Apply</Button>
           </div>
         </div>
