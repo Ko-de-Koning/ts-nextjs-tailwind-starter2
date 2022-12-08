@@ -10,7 +10,7 @@ export default function Header() {
     <header className='sticky top-0 z-50 bg-[#e9e7e2]'>
       <div className='layout flex h-14 items-center justify-between divide-x'>
         <nav>
-          <div className='space-x-100 object-right pl-14'>
+          <div className='space-x-100 object-right'>
             {router.pathname !== '/' ? (
               <UnstyledLink href='/' className='hover:text-gray-600'>
                 Home

@@ -23,7 +23,7 @@ export default function Signin() {
             setUserInfo({ ...userInfo, email: target.value })
           }
           type='email'
-          placeholder='jurjen@jacaranda.tree'
+          placeholder='e-mail'
         />
         <input
           value={userInfo.password}
@@ -31,7 +31,7 @@ export default function Signin() {
             setUserInfo({ ...userInfo, password: target.value })
           }
           type='password'
-          placeholder='purple'
+          placeholder='******'
         />
         <input type='submit' value='Login' />
       </form>
