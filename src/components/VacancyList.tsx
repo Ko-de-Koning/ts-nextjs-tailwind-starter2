@@ -1,7 +1,8 @@
+// eslint-disable-next-line simple-import-sort/imports
 import React, { useEffect, useState } from 'react';
 
-import type { VacancyObject } from './Vacancy';
 import Vacancy from './Vacancy';
+import type { VacancyObject } from './Vacancy';
 
 const VacancyList = () => {
   const [vacancyList, setVacancyList] = useState([] as VacancyObject[]);
@@ -29,7 +30,7 @@ const VacancyList = () => {
   }
 
   return (
-    <div className='vacancylist my-8'>
+    <div className='my-20'>
       {vacancyList.map((vacancy, index) => (
         <Vacancy key={vacancy.id ? vacancy.id : index} vacancy={vacancy} />
       ))}
