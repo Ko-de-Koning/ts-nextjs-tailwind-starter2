@@ -1,7 +1,8 @@
-import React from 'react';
-
+// eslint-disable-next-line simple-import-sort/imports
 import Button from '@/components/buttons/Button';
 import NextImage from '@/components/NextImage';
+// eslint-disable-next-line simple-import-sort/imports
+import React from 'react';
 
 export interface VacancyObject {
   text: string;
@@ -16,7 +17,7 @@ interface Vacancy {
 const Vacancy = ({ vacancy }: Vacancy) => {
   return (
     <div className='my-4 rounded-lg bg-slate-200'>
-      <div className='card flex flex-col justify-between rounded-lg md:flex-row'>
+      <div className='card flex flex-col items-center justify-between rounded-lg md:flex-row'>
         <NextImage
           useSkeleton
           src='/images/pinguin.jpg'
@@ -26,7 +27,7 @@ const Vacancy = ({ vacancy }: Vacancy) => {
           className='h-full sm:w-auto md:w-1/5'
           imgClassName='rounded-t-lg md:rounded-l-lg md:rounded-tr-none'
         />
-        <div className='flex flex-col p-3 text-sm text-gray-500 md:w-4/5 md:flex-row md:justify-between'>
+        <div className='flex flex-col items-center p-3 text-sm text-gray-500 md:w-4/5 md:flex-row md:justify-between'>
           <div className='p-2 font-bold'>
             <>{vacancy.text}</>
           </div>
