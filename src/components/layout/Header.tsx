@@ -1,9 +1,9 @@
-import { useRouter } from 'next/router';
-import { signIn } from 'next-auth/react';
 import * as React from 'react';
 
-import UnstyledLink from '@/components/links/UnstyledLink';
 import NextImage from '@/components/NextImage';
+import UnstyledLink from '@/components/links/UnstyledLink';
+import { signIn } from 'next-auth/react';
+import { useRouter } from 'next/router';
 
 export default function Header() {
   const router = useRouter();
