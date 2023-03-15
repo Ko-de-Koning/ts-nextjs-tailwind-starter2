@@ -1,12 +1,13 @@
 import * as React from 'react';
 
+import Loginbutton from '../buttons/Loginbutton';
 import NextImage from '@/components/NextImage';
 import UnstyledLink from '@/components/links/UnstyledLink';
-import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/router';
 
 export default function Header() {
   const router = useRouter();
+
   return (
     <header className='sticky top-0 z-50 bg-[#e9e7e2]'>
       <div className='layout flex h-14 items-center divide-x'>
@@ -17,13 +18,7 @@ export default function Header() {
                 Home
               </UnstyledLink>
             ) : (
-              <button
-                onClick={() => {
-                  signIn();
-                }}
-              >
-                Werkgever
-              </button>
+              <Loginbutton />
             )}
           </div>
           <div className=''>
