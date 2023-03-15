@@ -1,26 +1,20 @@
-import { AppProps } from 'next/app';
-import { Session } from 'next-auth';
-import { SessionProvider } from 'next-auth/react';
+import '../styles/globals.css';
+import 'thin-backend-react/auth.css';
 
-import '@/styles/globals.css';
-// !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
-import '@/styles/colors.css';
-
+import type { AppProps } from 'next/app';
 import Layout from '@/components/layout/Layout';
+import { ThinBackend } from 'thin-backend-react';
+import { initThinBackend } from 'thin-backend';
 
-/**
- * !STARTERCONF info
- * ? `Layout` component is called in every page using `np` snippets. If you have consistent layout across all page, you can add it here too
- */
+initThinBackend({ host: process.env.NEXT_PUBLIC_BACKEND_URL });
 
-function MyApp({ Component, pageProps }: AppProps<{ session: Session }>) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <SessionProvider session={pageProps.session}>
-      <Layout>
+    <Layout>
+      <ThinBackend>
         <Component {...pageProps} />
-      </Layout>
-    </SessionProvider>
+      </ThinBackend>
+    </Layout>
   );
 }
-
 export default MyApp;
