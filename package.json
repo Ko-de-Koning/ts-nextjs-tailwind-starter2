@@ -43,7 +43,7 @@
     "@types/node": "18.0.6",
     "@types/react": "^18.0.18",
     "@types/react-dom": "18.0.6",
-    "@types/thin-backend": "https://thin.dev/types/bd69bd91-795b-4d5b-aea1-0e546ee9d867/DWvklxKEYfsARFbqNtekfgPtZYcqZrfZ",
+    "@types/thin-backend": "https://thin.dev/types/9864961c-166e-4fad-95bb-83281712aea4/dVyTluYGGPOHNTCLZPYhtrKNJwVrgROj",
     "@typescript-eslint/eslint-plugin": "^5.36.2",
     "@typescript-eslint/parser": "^5.36.2",
     "autoprefixer": "^10.4.8",
