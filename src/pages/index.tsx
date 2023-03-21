@@ -1,7 +1,11 @@
 import * as React from 'react';
 
-import UnderlineLink from '@/components/links/UnderlineLink';
+import AddTaskButton from '@/components/buttons/AddTaskButton';
+import LogoutButton from '@/components/buttons/LogoutButton';
+import RetrieveUser from '@/components/jobs/RetrieveUser';
 import Seo from '@/components/Seo';
+import Tasks from '@/components/jobs/Tasks';
+import UnderlineLink from '@/components/links/UnderlineLink';
 import VacancyList from '@/components/VacancyList';
 
 /**
@@ -33,6 +37,10 @@ export default function HomePage() {
             :::: Snel en Voordelig Personeel Werven ::::{' '}
           </p>
           <section>
+            <RetrieveUser />
+            <LogoutButton />
+            <Tasks />
+            <AddTaskButton />
             <VacancyList />
           </section>
           <div className='my-6 grid place-items-center space-x-2'>
