@@ -6,7 +6,7 @@ export default function LogoutButton() {
 
   async function doLogout() {
     setLoading(true);
-    await logout({ redirect: 'http://localhost:3000' });
+    await logout({ redirect: 'http://www.milieuvacaturebank.nl' });
     // await logout();
     setLoading(false);
   }
